@@ -1,12 +1,23 @@
 import { useState } from "react/cjs/react.development";
 import SuggestionsListComponent from "./suggestionList";
 
-const Taginput = ({ suggestions }) => {
+const Taginput = () => {
   const [tags, setTags] = useState([]);
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(0);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [input, setInput] = useState([]);
+
+  const suggestions = [
+    "JavaScript",
+    "Java",
+    "HTML",
+    "CSS",
+    "React",
+    "Angular",
+    "C",
+    "Scala",
+  ];
 
   const onChange = (e) => {
     const userInput = e.target.value;
