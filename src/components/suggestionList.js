@@ -1,6 +1,6 @@
 const SuggestionsListComponent = (props) => {
   return props.filteredSuggestions.length ? (
-    <ul class="suggestions">
+    <ul className="suggestions">
       {props.filteredSuggestions.map((suggestion, index) => {
         let className;
         // Flag the active suggestion with a class
@@ -19,7 +19,7 @@ const SuggestionsListComponent = (props) => {
       })}
     </ul>
   ) : (
-    <div class="no-suggestions">
+    <div className="no-suggestions">
       <em>No suggestions, you're on your own!</em>
     </div>
   );
